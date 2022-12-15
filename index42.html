@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 22 lista faccat</title>
+</head>
+<body>
+    <!-- A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais
+de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%.
+Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva
+o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
+(considere que o mês possua 4 semanas exatas). -->
+   
+   <script>
+    let hm = parseInt(prompt("Insira a quantidade de horas que o funcionário trabalhou durante 1 mês: "));
+    let sh = parseFloat(prompt("Insira o salário por horas trbalhadas do funcionário: "));
+
+    salario = hm * sh
+
+    if(hm <= 160) {
+         
+        alert(`${"O salário total é:"} ${salario} ${"sem horas extras"}`)
+    }
+    
+    else if (hm > 160) {
+        horaExtras = salario + (salario*50/100)
+        alert(`${"O salário total é:"} ${horaExtras} ${"com horas extras"}`)
+    };
+
+
+   </script>
+</body>
+</html>

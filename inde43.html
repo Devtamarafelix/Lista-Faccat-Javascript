@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 24 lista faccat</title>
+
+</head>
+<body>
+    <!-- Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
+ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que
+ultrapassar este valor, calcular e escrever o seu salário total. -->
+
+<script>
+    let sv = parseFloat(prompt("Insira o salário fixo do vendedor: "));
+    let valorV = parseFloat(prompt("Insira o valor das vendas efetuadas: "));
+
+    if (valorV <= 1500) {
+        comissao = valorV + (valorV * 3/100)
+        salario = sv + comissao
+        
+        alert(`${"O salário total do vendedor é:"} ${salario}`)
+    } 
+    else if (valorV > 1500) {
+        comissao2 = valorV + (valorV * 5/100)
+        salario2 = sv + comissao2
+        
+        alert(`${"O salário total do vendedor é:"} ${salario2}`)
+        
+    };
+</script>
+</body>
+</html>

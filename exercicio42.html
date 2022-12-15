@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 42 Lista faccat</title>
+</head>
+<body>
+    <!-- Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para
+estar em condições, um dos seguintes requisitos deve ser satisfeito -->
+
+<script>
+    let cod = parseInt(prompt("Insira o número do empregado: "));
+    let dataN = parseInt(prompt("Insira o ano de nascimento do empregado: "));
+    let ano_ingresso = parseInt(prompt("Insira o ano do ingresso do empregado na empresa: "));
+    let anoAtual = parseInt(prompt("Insira o ano atual: "));
+
+    idade = ano_ingresso - dataN
+    temp = anoAtual - ano_ingresso 
+
+    if(idade <= 65 || ano_ingresso <= 30) {
+        alert(`${"O empregado tem"} ${idade} ${"anos"} ${"e o tempo de trabalho corresponde a: "} ${temp}`)
+        alert("Requerer aposentadoria")
+
+    } else if (idade <= 60 && ano_ingresso <= 25) {
+        alert(`${"O empregado tem"} ${idade} ${"anos"} ${"e o tempo de trabalho corresponde a: "} ${temp}`)
+        alert("Requerer aposentadoria!")
+
+    } else {
+        alert(`${"O empregado tem"} ${idade} ${"anos"} ${"e o tempo de trabalho corresponde a: "} ${temp}`)
+        alert("Não requerer!")
+    }
+</script>
+</body>
+</html>

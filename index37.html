@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 17 lista faccat</title>
+</head>
+<body>
+    <!-- Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever
+uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o
+aluno é aprovado). Escrever também a média calculada. -->
+
+      <script>
+        let nota1 = parseFloat(prompt("Digite a nota da primeira avaliação do aluno: "));
+        let nota2 = parseFloat(prompt("Digite a nota da segunda avaliação do aluno: "));
+
+        media = (nota1 + nota2)/2
+
+        if (media >= 6){
+            alert("O aluno foi aprovado e a média foi: "+media)
+        } else {
+            alert("O aluno não foi aprovado e a sua média foi: "+media)
+        }
+      </script>
+</body>
+</html>

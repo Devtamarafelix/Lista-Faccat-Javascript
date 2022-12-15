@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 25 lista faccat</title>
+</head>
+<body>
+    <!--Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e
+escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior
+ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.  -->
+
+<script>
+    let nc = parseInt(prompt("Digite o número da conta: "));
+    let saldo = parseInt(prompt("Digite o saldo: "));
+    let debito = parseInt(prompt("Digite o débito: "));
+    let credito = parseInt(prompt("Digite o crédito: "));
+
+    saldoAtual = saldo - debito + credito
+
+    if (saldoAtual >= 0) {
+       
+        alert("Saldo Positivo!")
+        alert(`${"Seu saldo atual é:R$ "}${saldoAtual}`)
+    } 
+    else if (saldoAtual <= 0) {
+        
+        alert("Saldo Negativo!")
+        alert(`${"Seu saldo atual é:R$ "}${saldoAtual}`)
+    }
+</script>
+</body>
+</html>
